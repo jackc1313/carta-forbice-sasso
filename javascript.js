@@ -8,4 +8,14 @@ function sceltaComputer() {
     }
 };
 
-console.log(sceltaComputer());
+function laTuaScelta() {
+    let scelta = prompt("Qual e' la tua scelta?", "");
+    console.log(scelta);
+    if (scelta = "sasso" || "carta" || "forbice" || "forbici") {
+        return sceltaComputer();
+    } else {
+        return "inserisci un valore valido";
+    }
+};
+
+console.log(laTuaScelta());
