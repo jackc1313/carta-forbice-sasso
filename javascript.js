@@ -1,9 +1,13 @@
+function numeroCasuale() {
+    return parseFloat(Math.random().toFixed(1));
+}
+
 function sceltaComputer() {
-    if (Math.random() <= 0.3) {
+    if (numeroCasuale() <= 0.3) {
         return "sasso";
-    }else if (0.3 < Math.random() <= 0.6) {
+    }else if (0.3 < numeroCasuale() <= 0.6) {
         return "carta";
-    } else {
+    } else if (0.6 < numeroCasuale() <= 0.9) {
         return "forbici";
     }
 };
